@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html">
+   <f:view>
+      <h:outputLabel style="font: bold" value="Hoşgeldiniz"/>
+      <br></br>
+   </f:view>
+
+   <body>
+      <div>
+         <br></br>
+         <p:outputLabel value="Kullanıcı adı"> </p:outputLabel>
+         <pre></pre>
+         <p:inputText id="username" value="#{login.username}" ></p:inputText>
+         <br></br><br></br>
+         <p:outputLabel value="Şifre"></p:outputLabel>
+         <pre></pre>
+         <p:inputText id="password" value="#{login.password}" ></p:inputText>
+         <br></br><br></br><br></br>
+
+         <br></br>
+         <h:commandButton value="Giriş" action="#{login.validateUsernamePassword}"></h:commandButton>
+
+      </div>
+   </body>
+</html>
